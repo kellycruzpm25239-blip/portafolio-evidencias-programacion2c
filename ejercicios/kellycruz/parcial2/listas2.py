@@ -6,10 +6,10 @@ Estas programando el sistema de una pequeña tienda. Debes manipular el inventar
 """
 productos=("leche","pan","huevos","manzana")
 productos.extend(["arroz","frijol","aceite"])
-producto.index ("pan")
+productos.index ("pan")
 productos.sort()
 print(productos)
-if "leche" in productos 
-    print("si,tenemos leche")
+if "leche" in productos:
+    print("si,tenemos leche")   
 else:
     print("no disponiblez")
