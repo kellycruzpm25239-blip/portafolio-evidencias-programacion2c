@@ -7,8 +7,13 @@
 def calcular_subtotal(precio, cantidad):
     """
     Calcula el subtotal multiplicando precio por cantidad.
-    Parámetros: precio, cantidad
-    Retorna: subtotal
+
+    Parámetros:
+    precio (float): Precio unitario del producto.
+    cantidad (int): Cantidad de productos.
+
+    Retorna:
+    subtotal (float): Resultado de la multiplicación.
     """
     subtotal = precio * cantidad
     return subtotal
@@ -18,8 +23,12 @@ def calcular_subtotal(precio, cantidad):
 def calcular_descuento(subtotal):
     """
     Aplica descuento del 10% si el subtotal es mayor a 1000.
-    Parámetros: subtotal
-    Retorna: descuento
+
+    Parámetros:
+    subtotal (float): Monto antes del descuento.
+
+    Retorna:
+    descuento (float): Cantidad descontada (0 si no aplica).
     """
     if subtotal > 1000:
         descuento = subtotal * 0.10
@@ -33,8 +42,12 @@ def calcular_descuento(subtotal):
 def calcular_iva(subtotal_con_descuento):
     """
     Calcula el IVA del 16%.
-    Parámetros: subtotal con descuento
-    Retorna: iva
+
+    Parámetros:
+    subtotal_con_descuento (float): Subtotal después de aplicar descuento.
+
+    Retorna:
+    iva (float): Impuesto calculado.
     """
     iva = subtotal_con_descuento * 0.16
     return iva
@@ -44,7 +57,12 @@ def calcular_iva(subtotal_con_descuento):
 def mostrar_ticket(producto, subtotal, iva, total_final):
     """
     Muestra los datos finales en pantalla.
-    Parámetros: producto, subtotal, iva, total
+
+    Parámetros:
+    producto (str): Nombre del producto.
+    subtotal (float): Subtotal sin impuestos.
+    iva (float): Impuesto calculado.
+    total_final (float): Total a pagar.
     """
     print("\n--- TICKET DE VENTA ---")
     print(f"Producto: {producto}")
